@@ -4,8 +4,11 @@
   "description": "",
   "main": "gruntfile.js",
   "dependencies": {
+    "bootstrap": "^4.0.0-beta.3",
     "grunt": "^1.0.1",
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "save": "^2.3.2",
+    "select2": "git+https://github.com/select2/select2.git"
   },
   "devDependencies": {
     "grunt-contrib-concat": "^1.0.1",

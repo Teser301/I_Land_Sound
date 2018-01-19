@@ -37,8 +37,14 @@ module.exports = function(grunt) {
 			  },
 			  css: {
 			    expand: true,
-			    cwd: 'src/scss',
-			    src: '*.css',
+			    cwd: 'node_modules/bootstrap/dist/css/',
+			    src: 'bootstrap.css',
+			    dest: 'app/css',
+			  },
+			  select: {
+			  	expand: true,
+			    cwd: 'node_modules/select2/dist/css/',
+			    src: 'select2.css',
 			    dest: 'app/css',
 			  },
 
@@ -62,7 +68,11 @@ module.exports = function(grunt) {
 				seperators: ';',
 			},
 			dist: {
-				src: ['src/js/*.js'],
+			src:	[ 'node_modules/jquery/dist/jquery.js',
+					  'node_modules/bootstrap/dist/js/bootstrap.js', 
+					  'node_modules/select2/dist/js/select2.js',
+					  'src/js/main.js'],
+
 				dest: 'app/js/build.js'
 			}
 		}
